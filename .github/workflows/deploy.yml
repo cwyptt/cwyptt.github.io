@@ -1,0 +1,64 @@
+# This workflow handles building and deploying your SvelteKit site to GitHub Pages
+name: Deploy to GitHub Pages
+
+# Controls when the action will run
+on:
+  # Triggers the workflow on push events but only for the main branch
+  push:
+    branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets the permissions needed for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    # Sets up a deployment environment with the name github-pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out your repository
+      - uses: actions/checkout@v4
+
+      # Step 2: Set up PNPM (since your project uses it)
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      # Step 3: Set up Node.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      # Step 4: Install your project dependencies
+      - name: Install dependencies
+        run: pnpm install
+
+      # Step 5: Build your SvelteKit site
+      - name: Build
+        run: pnpm build
+
+      # Step 6: Configure GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # Step 7: Upload your built site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'build'
+
+      # Step 8: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
