@@ -8,7 +8,7 @@ export class BackgroundAudioManager {
 	}
 
 	private createAudioElement(): HTMLAudioElement {
-		const audio = new Audio('/sounds/rain.mp3');
+		const audio = new Audio('sounds/rain-excuse-consuela.mp3');
 		audio.loop = true;
 		audio.volume = 0.1;
 		audio.preload = 'auto';

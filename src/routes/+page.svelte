@@ -8,8 +8,14 @@
 
 <NavHost />
 <main>
-	<Hero />
-	<About />
-	<Repos />
+	<section id="home">
+		<Hero />
+	</section>
+	<section id="about">
+		<About />
+	</section>
+	<section id="work">
+		<Repos />
+	</section>
 	<Footer />
 </main>

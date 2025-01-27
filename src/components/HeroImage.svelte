@@ -1,4 +1,6 @@
 <script lang="ts">
+	// import { base } from '$app/paths';
+
 	let zoom: boolean = $state(false);
 	let xRotation: number = $state(0);
 	let yRotation: number = $state(0);
@@ -24,7 +26,7 @@
 		aria-label="Cat looking out the window as it rains"
 		onmousemove={enterRotate3D} onmouseleave={leaveRotate3D}
 		class="img"
-		style:background-image="url(cat_window_rain.gif)"
+		style:background-image="url(resources/cat_window_rain.gif)"
 		style:transform="perspective(500px) {zoom ? 'scale(0.9)' : ''} rotateX({xRotation}deg) rotateY({yRotation}deg)"
 	>
 	</div>

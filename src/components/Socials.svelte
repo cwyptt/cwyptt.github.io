@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Social from '../components/Social.svelte';
+	import { base } from '$app/paths';
 
 	interface Props {
 		size: 'small' | 'normal';
@@ -19,12 +20,7 @@
 	<div class="separator" aria-hidden="true">|</div>
 
 	<div class="resume">
-		<Social
-			icon="resume"
-			tip="View Resume"
-			link="/api/v1/resume"
-			{size}
-		/>
+		<Social icon="resume" tip="View Resume" link="{base}/resources/resume.pdf" {size} />
 	</div>
 </div>
 

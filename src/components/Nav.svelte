@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/state';
+	import { onMount } from 'svelte';
 
 	interface Props {
 		href?: string;
@@ -11,15 +11,18 @@
 
 	const iconSrc = () => `icons/${section === '/' ? 'home' : section}.svg`;
 
-	async function handleClick() {
-		if (page.url.pathname !== '/') {
-			window.location.href = '/';
+	function handleClick(e: MouseEvent) {
+		e.preventDefault();
+		const target = document.querySelector(href);
+		if (target) {
+			target.scrollIntoView({ behavior: 'smooth' });
 		}
-
-		const el = document.querySelector(href);
-		if (!el) return;
-		el.scrollIntoView(true);
 	}
+
+	onMount(() => {
+		// Scroll to top on initial load
+		window.scrollTo(0, 0);
+	});
 
 </script>
 

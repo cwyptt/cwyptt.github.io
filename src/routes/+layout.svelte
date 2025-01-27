@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	import '../styles/global.scss';
 	import '../styles/fonts.scss';
@@ -39,21 +40,22 @@
 	<meta name="description" content="Cwypt | Alex Hanson's portfolio page" />
 	<title>Cwypt | Portfolio</title>
 
-	<!-- Audio preload for performance -->
-	<link rel="preload" href="/background-audio.mp3" as="audio" type="audio/mpeg">
+	<link rel="preload" href="{base}/sounds/rain-excuse-consuela.mp3" as="audio" type="audio/mpeg">
+
+	<link rel="preload" href="{base}/resources/resume.pdf" type="application/pdf">
 
 	<!-- Site favicon -->
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="{base}/favicon.ico">
 
 	<!-- Open Graph tags for social media sharing -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://cwyptt.github.io" />
 	<meta name="og:title" content="cwyptt.github.io" />
-	<meta content="/favicon.png" property="og:image" />
+	<meta content="{base}/favicon.png" property="og:image" />
 	<meta property="og:description" content="Crypt's Portfolio. Made with Svelte." />
 
-	<!-- Twitter card configuration -->
-	<meta name="twitter:image" itemprop="image" content="/favicon.png" />
+	<!-- Twitter Card configuration -->
+	<meta name="twitter:image" itemprop="image" content="{base}/favicon.png" />
 	<meta name="twitter:card" content="summary" />
 
 	<!-- Browser theme color -->
