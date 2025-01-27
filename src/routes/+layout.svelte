@@ -45,8 +45,6 @@
 
 	<link rel="preload" href="{base}/resources/resume.pdf" type="application/pdf">
 
-	<link rel="icon" type="image/x-icon" href="{base}/favicon.ico">
-
 	<!-- Open Graph tags for social media sharing -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://cwyptt.github.io" />
