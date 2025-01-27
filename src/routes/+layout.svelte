@@ -3,10 +3,11 @@
 	import { onMount } from 'svelte';
 	import '../styles/global.scss';
 	import '../styles/fonts.scss';
-	import Cursor from '../components/Cursor.svelte';
+	// import Cursor from '../components/Cursor.svelte';
 	import { BackgroundAudioManager } from '$lib/utils/audio/BackgroundAudioManager.ts';
 	import { initializeClickSound } from '$lib/utils/audio/clickSound.ts';
 	import { handleResize } from '$lib/utils/resizeHandler.ts';
+	import RaindropCursor from '../components/ui/cursors/RaindropCursor.svelte';
 
 	interface Props {
 		children?: import('svelte').Snippet;
@@ -64,7 +65,8 @@
 
 <svelte:window onclick={playSFX} />
 
-<Cursor />
+<!--<Cursor />-->
+<RaindropCursor />
 <span class:loading>
 	{@render children?.()}
 </span>

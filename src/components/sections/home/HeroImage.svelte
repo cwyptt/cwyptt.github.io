@@ -33,7 +33,7 @@
 </div>
 
 <style lang="scss">
-	@use "../styles/animations";
+	@use "../../../styles/animations";
 
   .img {
     border-radius: 48px;

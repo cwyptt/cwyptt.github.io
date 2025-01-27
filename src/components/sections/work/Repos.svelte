@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import type { Repo } from '../types/types.ts';
+	import type { Repo } from '../../../types/types.ts';
 
 	let repos: Repo[] | null | undefined = $state();
 
@@ -119,7 +119,7 @@
 </section>
 
 <style lang="scss">
-	@use '../styles/mixins';
+	@use '../../../styles/mixins';
 
   .title {
     display: flex;

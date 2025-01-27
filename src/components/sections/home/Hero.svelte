@@ -1,7 +1,7 @@
 <script lang="ts">
-	import HeroImage from '../components/HeroImage.svelte';
-	import Button from '../components/Button.svelte';
-	import Socials from '../components/Socials.svelte';
+	import HeroImage from './HeroImage.svelte';
+	import Button from '../../ui/Button.svelte';
+	import Socials from '../../socials/Socials.svelte';
 
 	function handleClick() {
 		const el = document.querySelector('#work');
@@ -24,8 +24,8 @@
 </section>
 
 <style lang="scss">
-  @use '../styles/mixins';
-	@use '../styles/animations';
+  @use '../../../styles/mixins';
+	@use '../../../styles/animations';
 
   section {
     scroll-margin-top: 20rem;

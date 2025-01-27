@@ -1,9 +1,9 @@
 <script lang="ts">
-	import NavHost from '../components/NavHost.svelte';
-	import Hero from '../components/Hero.svelte';
-	import About from '../components/About.svelte';
-	import Repos from '../components/Repos.svelte';
-	import Footer from '../components/Footer.svelte';
+	import NavHost from '../components/layout/navigation/NavHost.svelte';
+	import Hero from '../components/sections/home/Hero.svelte';
+	import About from '../components/sections/about/About.svelte';
+	import Repos from '../components/sections/work/Repos.svelte';
+	import Footer from '../components/layout/Footer.svelte';
 </script>
 
 <NavHost />

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Tooltip from '../components/Tooltip.svelte';
-	import Socials from '../components/Socials.svelte';
+	import Tooltip from '../ui/Tooltip.svelte';
+	import Socials from '../socials/Socials.svelte';
 
 	const currentYear = new Date().getFullYear();
 </script>

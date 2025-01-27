@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Tooltip from '../components/Tooltip.svelte';
+	import Tooltip from '../ui/Tooltip.svelte';
 
 	interface Props {
 		icon: string;

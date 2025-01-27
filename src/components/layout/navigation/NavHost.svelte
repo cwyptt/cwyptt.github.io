@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Nav from '../components/Nav.svelte';
+	import Nav from './Nav.svelte';
 
 	// Scroll position tracking
 	let y = $state(0);

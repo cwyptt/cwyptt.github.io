@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Tooltip from '../components/Tooltip.svelte';
+	import Tooltip from '../../ui/Tooltip.svelte';
 	import { getAge, getYearsOld } from "$lib/utils/getAge.ts";
 	import { onDestroy } from 'svelte';
 
@@ -122,7 +122,7 @@
 </section>
 
 <style lang="scss">
-  @use '../styles/mixins';
+  @use '../../../styles/mixins';
 
   // Layout
   section {

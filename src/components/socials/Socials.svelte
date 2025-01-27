@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Social from '../components/Social.svelte';
+	import Social from './Social.svelte';
 	import { base } from '$app/paths';
 
 	interface Props {
