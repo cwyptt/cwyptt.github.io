@@ -13,7 +13,7 @@
 			<h6>
 				Cwypt | ADH &#60;3
 				<Tooltip tip="Why, hello there;">
-					<span class="version-tag">V1</span>
+					<span class="version-tag">v0.1</span>
 				</Tooltip>
 			</h6>
 		</div>
