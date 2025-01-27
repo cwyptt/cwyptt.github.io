@@ -164,10 +164,7 @@
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 15 25 -10 rgba(0, 0, 0, 0.25);
-
-      #open {
-        filter: brightness(1.3);
-      }
+      filter: brightness(110%);
     }
   }
 
