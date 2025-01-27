@@ -10,7 +10,7 @@ export class BackgroundAudioManager {
 	private createAudioElement(): HTMLAudioElement {
 		const audio = new Audio('sounds/rain-excuse-consuela.mp3');
 		audio.loop = true;
-		audio.volume = 0.1;
+		audio.volume = 0.3;
 		audio.preload = 'auto';
 		audio.muted = false;
 		audio.setAttribute('playsinline', '');
