@@ -133,7 +133,7 @@
 
       span {
         color: var(--brighter);
-        margin-right: 0.2em;
+        //margin-right: 0.2em;
       }
     }
 
