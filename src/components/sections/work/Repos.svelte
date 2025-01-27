@@ -154,7 +154,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    transition: transform 0.3s var(--bezier-one), box-shadow 0.3s var(--bezier-one);
+    transition: transform 0.3s var(--bezier-one), box-shadow 0.3s var(--bezier-one), filter 0.3s var(--bezier-one);;
     justify-content: space-between;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
