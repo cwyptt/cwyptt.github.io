@@ -3,10 +3,10 @@
 	import { onMount } from 'svelte';
 	import '../styles/global.scss';
 	import '../styles/fonts.scss';
-	// import Cursor from '../components/Cursor.svelte';
 	import { BackgroundAudioManager } from '$lib/utils/audio/BackgroundAudioManager.ts';
 	import { initializeClickSound } from '$lib/utils/audio/clickSound.ts';
 	import { handleResize } from '$lib/utils/resizeHandler.ts';
+	// import Cursor from '../components/Cursor.svelte';
 	import RaindropCursor from '../components/ui/cursors/RaindropCursor.svelte';
 
 	interface Props {
@@ -38,14 +38,13 @@
 	<!-- Core meta tags for basic site functionality -->
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Cwypt | Alex Hanson's portfolio page" />
+	<meta name="description" content="Cwypt | Alex Hanson's Portfolio Page" />
 	<title>Cwypt | Portfolio</title>
 
 	<link rel="preload" href="{base}/sounds/rain-excuse-consuela.mp3" as="audio" type="audio/mpeg">
 
 	<link rel="preload" href="{base}/resources/resume.pdf" type="application/pdf">
 
-	<!-- Site favicon -->
 	<link rel="icon" type="image/x-icon" href="{base}/favicon.ico">
 
 	<!-- Open Graph tags for social media sharing -->
@@ -53,7 +52,7 @@
 	<meta property="og:url" content="https://cwyptt.github.io" />
 	<meta name="og:title" content="cwyptt.github.io" />
 	<meta content="{base}/favicon.png" property="og:image" />
-	<meta property="og:description" content="Crypt's Portfolio. Made with Svelte." />
+	<meta property="og:description" content="Crypt's Portfolio. Made in Svelte 5." />
 
 	<!-- Twitter Card configuration -->
 	<meta name="twitter:image" itemprop="image" content="{base}/favicon.png" />
