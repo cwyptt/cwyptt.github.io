@@ -147,7 +147,7 @@
   }
   .repo-card {
     padding: 1rem 1.25rem;
-    background-color: var(--neutral-two);
+    background-color: rgba(255, 255, 255, 0.06); // Light overlay | Originally: var(--neutral-two)
     border-radius: 8px;
     min-height: 140px;
     height: 100%;
