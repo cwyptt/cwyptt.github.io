@@ -47,11 +47,10 @@
       repos = [
           {
               "owner": "cwyptt",
-              "repo": "\n                AudioMerge\n              ",
-              "link": "https://github.com/cwyptt/\n                AudioMerge\n              ",
+              "repo": "AudioMerge",
+              "link": "https://github.com/cwyptt/AudioMerge",
               "description": "A standalone tool for merging audio tracks from MKV files with ease. No dependencies required—just download and run.",
-              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                AudioMerge\n              ",
-              "website": [],
+              "image": "https://opengraph.githubassets.com/1/cwyptt/AudioMerge",
               "language": "Python",
               "languageColor": "#3572A5",
               "stars": "1",
@@ -59,10 +58,10 @@
           },
           {
               "owner": "cwyptt",
-              "repo": "\n                cwyptt.github.io\n              ",
-              "link": "https://github.com/cwyptt/\n                cwyptt.github.io\n              ",
-              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                cwyptt.github.io\n              ",
-              "website": [],
+              "repo": "cwyptt.github.io",
+              "link": "https://github.com/cwyptt/cwyptt.github.io",
+              "image": "https://opengraph.githubassets.com/1/cwyptt/cwyptt.github.io",
+              "website": "https://cwyptt.github.io/",
               "language": "JavaScript",
               "languageColor": "#f1e05a",
               "stars": 0,
@@ -70,20 +69,18 @@
           },
           {
               "owner": "cwyptt",
-              "repo": "\n                svelte-portfolio\n              ",
-              "link": "https://github.com/cwyptt/\n                svelte-portfolio\n              ",
-              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                svelte-portfolio\n              ",
-              "website": [],
+              "repo": "svelte-portfolio",
+              "link": "https://github.com/cwyptt/svelte-portfolio",
+              "image": "https://opengraph.githubassets.com/1/cwyptt/svelte-portfolio",
               "stars": 0,
               "forks": 0
           },
           {
               "owner": "cwyptt",
-              "repo": "\n                kayeCRM\n              ",
-              "link": "https://github.com/cwyptt/\n                kayeCRM\n              ",
+              "repo": "kayeCRM",
+              "link": "https://github.com/cwyptt/kayeCRM",
               "description": "A simple CRM solution for freelancers and businesses alike. Java and Spring Boot. Currently in very early development.",
-              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                kayeCRM\n              ",
-              "website": [],
+              "image": "https://opengraph.githubassets.com/1/cwyptt/kayeCRM",
               "language": "Java",
               "languageColor": "#b07219",
               "stars": 0,
@@ -91,11 +88,10 @@
           },
           {
               "owner": "cwyptt",
-              "repo": "\n                kickstart.nvim\n              ",
-              "link": "https://github.com/cwyptt/\n                kickstart.nvim\n              ",
+              "repo": "kickstart.nvim",
+              "link": "https://github.com/cwyptt/kickstart.nvim",
               "description": "A launch point for your personal nvim configuration",
-              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                kickstart.nvim\n              ",
-              "website": [],
+              "image": "https://opengraph.githubassets.com/1/cwyptt/kickstart.nvim",
               "language": "Lua",
               "languageColor": "#000080",
               "stars": 0,
@@ -103,17 +99,16 @@
           },
           {
               "owner": "cwyptt",
-              "repo": "\n                bscs\n              ",
-              "link": "https://github.com/cwyptt/\n                bscs\n              ",
+              "repo": "bscs",
+              "link": "https://github.com/cwyptt/bscs",
               "description": "Blackswan Cybersecurity",
-              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                bscs\n              ",
-              "website": [],
+              "image": "https://opengraph.githubassets.com/1/cwyptt/bscs",
               "language": "Go",
               "languageColor": "#00ADD8",
               "stars": 0,
               "forks": 0
-          },
-      ];
+          }
+      ]
   });
 </script>
 
