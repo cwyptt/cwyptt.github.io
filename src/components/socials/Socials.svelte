@@ -12,9 +12,9 @@
 
 <div class="socials-container">
 	<div class="socials">
-		<Social icon="github" tip="cwyptt" link="https://github.com/cwyptt" {size} />
-		<Social icon="linkedin" tip="alexdavidhanson" link="https://linkedin.com/in/alexdavidhanson" {size} />
-		<Social icon="email" tip="alex.d.hanson@outlook.com" link="mailto:alex.d.hanson@outlook.com" {size} />
+		<Social icon="github-seafoam" tip="cwyptt" link="https://github.com/cwyptt" {size} />
+		<Social icon="linkedin-seafoam" tip="alexdavidhanson" link="https://linkedin.com/in/alexdavidhanson" {size} />
+		<Social icon="email-seafoam" tip="alex.d.hanson@outlook.com" link="mailto:alex.d.hanson@outlook.com" {size} />
 	</div>
 
 	<div class="separator" aria-hidden="true">|</div>
