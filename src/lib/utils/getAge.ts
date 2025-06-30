@@ -1,5 +1,5 @@
 // Date of birth (YYYY/MM/dd)
-const birthDate = new Date('2001/09/17');
+const birthDate = new Date('2001-09-17');
 
 export const getAge = (unit = 'years'): string => {
 	const ageMs = Date.now() - birthDate.getTime();
@@ -38,5 +38,5 @@ export const getAge = (unit = 'years'): string => {
 };
 
 export const getYearsOld = (): string => {
-	return ((Date.now() - birthDate.getTime()) / (1000 * 60 * 60 * 24 * 365.25)).toFixed();
+	return Math.trunc((Date.now() - birthDate.getTime()) / (1000 * 60 * 60 * 24 * 365.25)).toString();
 };

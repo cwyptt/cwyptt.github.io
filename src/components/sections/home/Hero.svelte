@@ -13,8 +13,8 @@
 <section id="home" class="wrapper">
 	<div>
 		<h1><span class="glitch" data-text="¢">¢</span>rypt</h1>
-		<h4>Salesforce Developer | Software Developer | IT Support</h4>
-		<h5>Linux & Windows Administration, Database Management, <br>Audio Engineering, and more.</h5>
+		<h4>Alex Hanson, <span style="font-weight: normal; font-size: 0.8em">Fleet Operations Engineer</span></h4>
+		<h5>Intern at U.S. Cyber Defense Center</h5>
 		<div class="socials">
 			<Socials size="normal"/>
 		</div>

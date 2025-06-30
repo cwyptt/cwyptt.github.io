@@ -39,7 +39,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Cwypt | Alex Hanson's Portfolio Page" />
-	<title>Cwypt | Portfolio</title>
+	<title>ADH | Portfolio</title>
 
 	<link rel="preload" href="{base}/sounds/rain-excuse-consuela.mp3" as="audio" type="audio/mpeg">
 

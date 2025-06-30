@@ -104,20 +104,20 @@
 			</Tooltip> — experiences that solidified my choice of a career in computer science.
 		</p>
 
-		<div class="skills-section">
-			<h3>Skills</h3>
-			<div class="skills-grid">
-				{#each Object.values(skills) as category}
-					<div class="tooltip-wrapper">
-						<Tooltip tip={category.tooltip}>
-              <span class="skill-category">
-                {category.title}
-              </span>
-						</Tooltip>
-					</div>
-				{/each}
-			</div>
-		</div>
+		<!-- <div class="skills-section">
+			   <h3>Skills</h3>
+			   <div class="skills-grid">
+				 {#each Object.values(skills) as category}
+				 <div class="tooltip-wrapper">
+				 <Tooltip tip={category.tooltip}>
+         <span class="skill-category">
+         {category.title}
+         </span>
+				 </Tooltip>
+				 </div>
+				 {/each}
+			   </div>
+		     </div> -->
 	</div>
 </section>
 

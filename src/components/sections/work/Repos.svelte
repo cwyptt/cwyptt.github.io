@@ -32,16 +32,89 @@
 		};
 	}
 
-	onMount(async () => {
-		try {
-			const response = await fetch('https://gh-pinned-repos.egoist.dev/?username=cwyptt');
-			const rawData = await response.json();
-			// Clean the data before assigning to repos
-			repos = rawData.map(cleanRepoData);
-		} catch (error) {
-			console.error('Error fetching repository data:', error);
-		}
-	});
+// onMount(async () => {
+// 		try {
+// 			const response = await fetch('https://gh-pinned-repos.egoist.dev/?username=cwyptt');
+// 			const rawData = await response.json();
+// 			// Clean the data before assigning to repos
+// 			repos = rawData.map(cleanRepoData);
+// 		} catch (error) {
+// 			console.error('Error fetching repository data:', error);
+// 		}
+// 	});
+
+  onMount(async () => {
+      repos = [
+          {
+              "owner": "cwyptt",
+              "repo": "\n                AudioMerge\n              ",
+              "link": "https://github.com/cwyptt/\n                AudioMerge\n              ",
+              "description": "A standalone tool for merging audio tracks from MKV files with ease. No dependencies required—just download and run.",
+              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                AudioMerge\n              ",
+              "website": [],
+              "language": "Python",
+              "languageColor": "#3572A5",
+              "stars": "1",
+              "forks": 0
+          },
+          {
+              "owner": "cwyptt",
+              "repo": "\n                cwyptt.github.io\n              ",
+              "link": "https://github.com/cwyptt/\n                cwyptt.github.io\n              ",
+              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                cwyptt.github.io\n              ",
+              "website": [],
+              "language": "JavaScript",
+              "languageColor": "#f1e05a",
+              "stars": 0,
+              "forks": 0
+          },
+          {
+              "owner": "cwyptt",
+              "repo": "\n                svelte-portfolio\n              ",
+              "link": "https://github.com/cwyptt/\n                svelte-portfolio\n              ",
+              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                svelte-portfolio\n              ",
+              "website": [],
+              "stars": 0,
+              "forks": 0
+          },
+          {
+              "owner": "cwyptt",
+              "repo": "\n                kayeCRM\n              ",
+              "link": "https://github.com/cwyptt/\n                kayeCRM\n              ",
+              "description": "A simple CRM solution for freelancers and businesses alike. Java and Spring Boot. Currently in very early development.",
+              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                kayeCRM\n              ",
+              "website": [],
+              "language": "Java",
+              "languageColor": "#b07219",
+              "stars": 0,
+              "forks": 0
+          },
+          {
+              "owner": "cwyptt",
+              "repo": "\n                kickstart.nvim\n              ",
+              "link": "https://github.com/cwyptt/\n                kickstart.nvim\n              ",
+              "description": "A launch point for your personal nvim configuration",
+              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                kickstart.nvim\n              ",
+              "website": [],
+              "language": "Lua",
+              "languageColor": "#000080",
+              "stars": 0,
+              "forks": 0
+          },
+          {
+              "owner": "cwyptt",
+              "repo": "\n                bscs\n              ",
+              "link": "https://github.com/cwyptt/\n                bscs\n              ",
+              "description": "Blackswan Cybersecurity",
+              "image": "https://opengraph.githubassets.com/1/cwyptt/\n                bscs\n              ",
+              "website": [],
+              "language": "Go",
+              "languageColor": "#00ADD8",
+              "stars": 0,
+              "forks": 0
+          },
+      ];
+  });
 </script>
 
 <section class="wrapper" id="work">
