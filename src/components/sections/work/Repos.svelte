@@ -316,7 +316,7 @@
     position: relative;
 
     &:before {
-      @include mixins.outlineText($content: '⤬', $translateX: 760%, $translateY: -35%);
+      @include mixins.outlineText($content: '⤬', $translateX: 840%, $translateY: 20%);
     }
 
     @media (max-width: 600px) {
