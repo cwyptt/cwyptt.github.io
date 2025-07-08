@@ -93,7 +93,7 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    opacity: 0.5;
+    opacity: 0.9;
     height: 24px;
     width: 24px;
     transition: all 0.5s var(--bezier-one);
