@@ -50,8 +50,7 @@
     <div class="text">
         <h3>Preferences</h3>
         <p class="preferences-description">
-            Here are my go-to tools and preferences for administration, development, and daily computing tasks.<br>
-            These choices reflect my focus on efficiency, customization, and open-source solutions.
+            Here are my go-to tools and preferences for administration, development, and daily computing tasks.
         </p>
 
         <div class="preferences-section">
