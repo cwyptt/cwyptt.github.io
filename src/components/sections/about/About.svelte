@@ -2,7 +2,7 @@
 	import Tooltip from '../../ui/Tooltip.svelte';
 	import { getAge, getYearsOld } from '$lib/utils/getAge.ts';
 	import { onDestroy } from 'svelte';
-  import tooltipInfo from '$lib/data/tooltips';
+  import { originalTooltips } from '$lib/data/tooltips';
 
 	// Age update configuration
 	const AGE_CONFIG = {
@@ -51,14 +51,14 @@
 			<span>2023</span> with a degree in Cybersecurity, maintaining a 3.8 GPA throughout my studies.
 			My passion for technology started early, fueled by a fascination with computers and the
 			concept of programming. This interest deepened in high school as I earned my
-			<Tooltip tip={tooltipInfo.certification.tooltip}>
-				<a href={tooltipInfo.certification.link} target="_blank" rel="noopener noreferrer">
-					<span>{tooltipInfo.certification.text}</span>
+			<Tooltip tip={originalTooltips.comptiaitf.tooltip}>
+				<a href={originalTooltips.comptiaitf.link} target="_blank" rel="noopener noreferrer">
+					<span>{originalTooltips.comptiaitf.text}</span>
 				</a>
 			</Tooltip> certification, alongside Java Programming and IT Fundamentals classes at the
-			<Tooltip tip={tooltipInfo.cctc.tooltip}>
-				<a href={tooltipInfo.cctc.link} target="_blank">
-					<span>{tooltipInfo.cctc.text}</span>
+			<Tooltip tip={originalTooltips.cctc.tooltip}>
+				<a href={originalTooltips.cctc.link} target="_blank">
+					<span>{originalTooltips.cctc.text}</span>
 				</a>
 			</Tooltip> — experiences that solidified my choice of a career in computer science.
 		</p>
