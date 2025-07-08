@@ -110,26 +110,15 @@
 
     .preferences-grid {
         display: grid;
-        gap: 1.5rem;
+        gap: 2.5rem;
         grid-template-columns: 1fr 1fr;
+        align-items: start;
 
-        @media (max-width: 868px) {
-            grid-template-columns: 1fr;
+        .preferences-item {
+            display: flex;
+            width: 100%;
         }
-    }
 
-    .preference-item {
-        display: grid;
-        grid-template-columns: 10rem 1fr;
-        align-items: center;
-        gap: 1rem;
-
-        @media (max-width: 868px) {
-            grid-template-columns: 1fr;
-            /* flex-direction: column;
-               align-items: flex-start;
-               gap: 0.5rem; */
-        }
     }
 
     .preference-label {
@@ -137,8 +126,8 @@
         font-family: var(--font-five);
         color: #ffffff;
         font-size: 0.9rem;
+        min-width: 9rem;
         padding: 0.2rem 0.5rem;
-        width: fit-content;
         transition: all 0.3s var(--bezier-one);
         cursor: help;
 
