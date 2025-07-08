@@ -22,7 +22,7 @@
 		updateInterval = setInterval(() => {
 			if (updateInterval) age = getAge(AGE_CONFIG.unit);
 		}, AGE_CONFIG.updateDelay);
-	}
+	  }
 
 	function pauseAge() {
 		if (!updateInterval) return;

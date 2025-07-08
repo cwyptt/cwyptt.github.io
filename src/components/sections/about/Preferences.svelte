@@ -1,41 +1,68 @@
 <script lang="ts">
   import Tooltip from '../../ui/Tooltip.svelte';
+  import tooltipInfo from '$lib/data/tooltips';
 
-  // Preferences data structure
+// Preferences data structure
+// const preferences = {
+//       os: {
+//           title: "Operating System",
+//           value: "Void Linux",
+//           tooltip: "A rolling release, however stable, Linux distribution utilizing Runit as the init system."
+//       },
+//       wm: {
+//           title: "Window Manager",
+//           value: "SwayFX",
+//           tooltip: "Sway - An i3-compatible Wayland compositor. SwayFX - Sway, but with eye candy."
+//       },
+//       editor: {
+//           title: "Text Editor",
+//           value: "Emacs (Spacemacs)",
+//           tooltip: "Emacs with the Spacemacs distribution for Vim emulation and enhanced productivity."
+//       },
+//       terminal: {
+//           title: "Terminal Emulator",
+//           value: "Foot (Client)",
+//           tooltip: "Lightweight terminal emulator for Wayland and uses a client-server architecture."
+//       }
+//   };
+
   const preferences = {
       os: {
           title: "Operating System",
-          value: "Void Linux",
-          tooltip: "A rolling release Linux distribution utilizing Runit as the init system."
+          ...tooltipInfo.preferences.os
+      },
+      wm: {
+          title: "Window Manager",
+          ...tooltipInfo.preferences.wm
       },
       editor: {
           title: "Text Editor",
-          value: "Emacs (Spacemacs)",
-          tooltip: "Emacs with the Spacemacs distribution for Vim emulation and enhanced productivity."
+          ...tooltipInfo.preferences.editor
       },
       terminal: {
           title: "Terminal Emulator",
-          value: "Foot (Client)",
-          toolip: "Lightweight terminal emulator for Wayland and uses a client-server architecture."
+          ...tooltipInfo.preferences.terminal
       }
-  };
+  }
 </script>
 
 <section id="preferences" class="wrapper">
     <div class="text">
         <h3>Preferences</h3>
-        <p>
-            Here are my go-to tools and preferences for administration, development, and daily computing tasks,
+        <p class="preferences-description">
+            Here are my go-to tools and preferences for administration, development, and daily computing tasks.<br>
             These choices reflect my focus on efficiency, customization, and open-source solutions.
         </p>
 
         <div class="preferences-section">
             <div class="preferences-grid">
                 {#each Object.entries(preferences) as [key, pref]}
-                    <div classs="preferences-item">
+                    <div class="preferences-item">
                         <span class="preference-label">{pref.title}:</span>
                         <Tooltip tip="{pref.tooltip}">
-                            <span class="preference-value">{pref.value}</span>
+                            <a href={pref.link} target="_blank" rel="noopener noreferrer" class="preference-link">
+                                <span class="preference-value">{pref.text}</span>
+                            </a>
                         </Tooltip>
                     </div>
                 {/each}
@@ -50,7 +77,6 @@
     // Layout
     section {
         margin-bottom: 6rem;
-        display: grid;
         gap: 4.5rem;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -80,31 +106,49 @@
 
     // Preferences secntion styling
     .preferences-section {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     .preferences-grid {
         display: grid;
         gap: 1.5rem;
-        grid-template-columns: 1fr;
-    }
-
-    .preference-item {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
 
         @media (max-width: 868px) {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.5rem;
+            grid-template-columns: 1fr;
         }
     }
 
-    .perference-label {
-        font-weight: 400;
-        font-family: var(--font-two), serif;
+    .preference-item {
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+        align-items: center;
+        gap: 1rem;
+
+        @media (max-width: 868px) {
+            grid-template-columns: 1fr;
+            /* flex-direction: column;
+               align-items: flex-start;
+               gap: 0.5rem; */
+        }
+    }
+
+    .preference-label {
+        font-weight: 600;
+        font-family: var(--font-five);
+        font-size: 0.9rem;
+        padding: 0.2rem 0.5rem;
+        width: fit-content;
+        transition: all 0.3s var(--bezier-one);
+        cursor: help;
+
+        &:hover {
+            filter: brightness(110%);
+        }
+    }
+
+    .preference-value {
+        font-family: var(--font-five), serif;
         font-size: 0.9rem;
         background-color: var(--neutral-one);
         border-radius: 7px;
@@ -117,6 +161,15 @@
         &:hover {
             filter: brightness(110%);
         }
+    }
+
+    .preference-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .preferences-description {
+        display: grid;
     }
 
     // Tooltip positioning for preferences
