@@ -163,7 +163,7 @@
     width: 10px;
     height: 10px;
     background: transparent;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     border-radius: 50%;
     opacity: 1;
   }

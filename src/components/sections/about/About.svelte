@@ -106,7 +106,7 @@
 		&::before {
 			@include mixins.outlineText(
 				$content: '╭',
-				$translateX: 630%,
+				$translateX: 700%,
 				$translateY: -5%,
 				$fontSize: 150px,
 				$opacity: 0.22

@@ -96,9 +96,9 @@
         &::before {
             @include mixins.outlineText(
                 $content: '⚙',
-                $translateX: 630%,
-                $translateY: -5%,
-                $fontSize: 150px,
+                $translateX: 750%,
+                $translateY: 50%,
+                $fontSize: 250px,
                 $opacity: 0.22
             )
         }
@@ -136,6 +136,7 @@
     .preference-label {
         font-weight: 600;
         font-family: var(--font-five);
+        color: #ffffff;
         font-size: 0.9rem;
         padding: 0.2rem 0.5rem;
         width: fit-content;

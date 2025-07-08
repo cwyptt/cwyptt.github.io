@@ -97,9 +97,9 @@
   h1::before {
     @include mixins.outlineText(
 						$content: '⌥',
-						$translateX: -125%,
-						$translateY: -50%,
-						$fontSize: 100px,
+						$translateX: -200%,
+						$translateY: -85%,
+						$fontSize: 300px,
 						$letterSpacing: -0.1em
 		);
   }

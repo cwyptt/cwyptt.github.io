@@ -330,7 +330,7 @@ function cleanRepoData(repo: any): Repo {
     position: relative;
 
     &:before {
-      @include mixins.outlineText($content: '⤬', $translateX: 840%, $translateY: 20%);
+      @include mixins.outlineText($content: '⤬', $translateX: 750%, $translateY: 100%);
     }
 
     @media (max-width: 600px) {
