@@ -86,6 +86,8 @@
       bottom: 0;
       top: auto;
       padding: 0;
+        backdrop-filter: blur(15px);
+      border-top: 2px solid var(--brighter-opacity);
 
       &::before {
         background-color: #1a1616;
