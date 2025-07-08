@@ -121,17 +121,58 @@
         display: grid;
     }
 
-    // Tooltip positioning for preferences
     :global(.preferences-grid .tooltip) {
          left: 50%;
          transform: translateX(-50%) translateY(-120%);
          white-space: nowrap;
+
+        @media (max-width: 868px) {
+            // Mobile-specific tooltip styles
+            position: absolute;
+            left: -75%;
+            right: 0;
+            transform: translateY(-100%);
+            width: 90vw;
+            max-width: 200px;
+            white-space: normal;
+            word-break: break-word;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     @media (max-width: 868px) {
         .preferences-grid {
-            align-items: center;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+
+            .preferences-item {
+                display: grid;
+                grid-template-columns: 9rem 1fr;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }
+
+        .preference-label {
+            min-width: 10rem;
+            padding-right: 0.5rem;
+        }
+        .preference-value {
+            width: auto;
+
+        }
+        .text::before {
+            @include mixins.outlineText(
+                $content: '⚙',
+                $translateX: 325%,
+                $translateY: 55%,
+                $fontSize: 200px,
+                $opacity: 0.22
+            );
         }
     }
-</style>
 
+</style>
