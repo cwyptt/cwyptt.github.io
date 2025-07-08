@@ -1,49 +1,9 @@
 <script lang="ts">
   import Tooltip from '../../ui/Tooltip.svelte';
-  import tooltipInfo from '$lib/data/tooltips';
+  import { preferences } from '$lib/data/tooltips';
 
-// Preferences data structure
-// const preferences = {
-//       os: {
-//           title: "Operating System",
-//           value: "Void Linux",
-//           tooltip: "A rolling release, however stable, Linux distribution utilizing Runit as the init system."
-//       },
-//       wm: {
-//           title: "Window Manager",
-//           value: "SwayFX",
-//           tooltip: "Sway - An i3-compatible Wayland compositor. SwayFX - Sway, but with eye candy."
-//       },
-//       editor: {
-//           title: "Text Editor",
-//           value: "Emacs (Spacemacs)",
-//           tooltip: "Emacs with the Spacemacs distribution for Vim emulation and enhanced productivity."
-//       },
-//       terminal: {
-//           title: "Terminal Emulator",
-//           value: "Foot (Client)",
-//           tooltip: "Lightweight terminal emulator for Wayland and uses a client-server architecture."
-//       }
-//   };
+  const myPreferences = Object.values(preferences);
 
-  const preferences = {
-      os: {
-          title: "Operating System",
-          ...tooltipInfo.preferences.os
-      },
-      wm: {
-          title: "Window Manager",
-          ...tooltipInfo.preferences.wm
-      },
-      editor: {
-          title: "Text Editor",
-          ...tooltipInfo.preferences.editor
-      },
-      terminal: {
-          title: "Terminal Emulator",
-          ...tooltipInfo.preferences.terminal
-      }
-  }
 </script>
 
 <section id="preferences" class="wrapper">
@@ -55,10 +15,10 @@
 
         <div class="preferences-section">
             <div class="preferences-grid">
-                {#each Object.entries(preferences) as [key, pref]}
+                {#each myPreferences as pref}
                     <div class="preferences-item">
                         <span class="preference-label">{pref.title}:</span>
-                        <Tooltip tip="{pref.tooltip}">
+                        <Tooltip tip={pref.tooltip}>
                             <a href={pref.link} target="_blank" rel="noopener noreferrer" class="preference-link">
                                 <span class="preference-value">{pref.text}</span>
                             </a>
@@ -127,7 +87,7 @@
         color: #ffffff;
         font-size: 0.9rem;
         min-width: 9rem;
-        padding: 0.2rem 0.5rem;
+        padding-right: 0.5rem;
         transition: all 0.3s var(--bezier-one);
         cursor: help;
 
@@ -174,3 +134,4 @@
         }
     }
 </style>
+
