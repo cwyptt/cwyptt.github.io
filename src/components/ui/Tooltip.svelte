@@ -61,7 +61,7 @@
 		background-color: var(--brighter);
 		color: var(--neutral-one);
 		font-size: 0.9rem;
-		font-family: var(--font-two),serif;
+		font-family: var(--font-five); // Text shown when hovering over Tooltip
 		font-weight: 300;
 		letter-spacing: -0.075em;
 

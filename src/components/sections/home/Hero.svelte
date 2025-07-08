@@ -14,7 +14,7 @@
 	<div>
 		<h1><span class="glitch" data-text="¢">¢</span>rypt</h1>
 		<h4>Alex Hanson  <span style="font-weight: normal; font-size: 0.8em">| Roanoke, TX</span></h4>
-		<h5>Operations Engineer at CoreWeave</h5>
+		<h5>Operations Engineer at <span style="font-weight: 400">CoreWeave</span></h5>
 		<div class="socials">
 			<Socials size="normal"/>
 		</div>
@@ -50,7 +50,7 @@
   }
 
   .socials {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1.7rem;
   }
 
@@ -59,6 +59,7 @@
       //transform: rotate(-75deg);
       font-family: "Space Grotesk";
       font-size: 8rem;
+      margin-bottom: 0.5rem;
       display: inline-block;
       position: relative;
       color: #5ca0bf;

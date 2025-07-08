@@ -116,26 +116,26 @@
 }
 
 /* I don't think this is needed... */
-:root {
-  --white: #e4eef2;
-  --white-two: hsl(195deg, 15%, 88%);
-  --brighter: #22c2f5;
-  --brighter-opacity: #22c2f5;
-  --bg-color: hsl(195deg, 83%, 18%);
-  --neutral-one: #092a36;
-  --neutral-two: #265c6e;
-  --neutral-three: #118AB2;
-  --neutral-four: hsl(195deg, 80%, 59%);
-  --neutral-four-brighter: hsl(195deg, 80%, 69%);
-  --neutral-five: #3c9dbd;
-  --grey-one: #2e2e2e;
-  --grey-two: #8c8c8c;
-  --grey-three: #4d4d4d;
-  --grey-four: #c8c8c8;
-  --font-one: "Space Grotesk", sans-serif;
-  --font-two: "Source Code Pro", monospace;
-  --bezier-one: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
+/* :root { */
+/*   --white: #e4eef2; */
+/*   --white-two: hsl(195deg, 15%, 88%); */
+/*   --brighter: #22c2f5; */
+/*   --brighter-opacity: #22c2f5; */
+/*   --bg-color: hsl(195deg, 83%, 18%); */
+/*   --neutral-one: #092a36; */
+/*   --neutral-two: #265c6e; */
+/*   --neutral-three: #118AB2; */
+/*   --neutral-four: hsl(195deg, 80%, 59%); */
+/*   --neutral-four-brighter: hsl(195deg, 80%, 69%); */
+/*   --neutral-five: #3c9dbd; */
+/*   --grey-one: #2e2e2e; */
+/*   --grey-two: #8c8c8c; */
+/*   --grey-three: #4d4d4d; */
+/*   --grey-four: #c8c8c8; */
+/*   --font-one: "Space Grotesk", sans-serif; */
+/*   --font-two: "Source Code Pro", monospace; */
+/*   --bezier-one: cubic-bezier(0.25, 0.46, 0.45, 0.94); */
+/* } */
 
 * {
   cursor: pointer;

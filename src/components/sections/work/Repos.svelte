@@ -138,7 +138,7 @@ function cleanRepoData(repo: any): Repo {
 								<img src="icons/open.svg" alt="open in new tab" id="open" />
 							</div>
 						</div>
-						<div>
+						<div class="repo-info">
 							<h3>{repo}</h3>
 							<h6>{description}</h6>
 						</div>
@@ -213,6 +213,7 @@ function cleanRepoData(repo: any): Repo {
       }
     }
   }
+
   .repo-card {
     padding: 1rem 1.25rem;
     background-color: rgba(255, 255, 255, 0.06); // Light overlay | Originally: var(--neutral-two)
@@ -233,6 +234,15 @@ function cleanRepoData(repo: any): Repo {
       transform: translateY(-2px);
       box-shadow: 0 15 25 -10 rgba(0, 0, 0, 0.25);
       filter: brightness(110%);
+    }
+
+    .repo-info {
+        font-family: var(--font-five);
+
+        h3,
+        h6 {
+          font-family: inherit;
+        }
     }
   }
 
@@ -278,9 +288,9 @@ function cleanRepoData(repo: any): Repo {
     margin-bottom: 1rem;
   }
 
-  h6 {
-    font-family: var(--font-four)
-  }
+/* h6 {
+   font-family: var(--font-f)
+   } */
 
   #star {
     transform: translateY(-1px);

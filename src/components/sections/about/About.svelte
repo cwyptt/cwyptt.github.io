@@ -169,7 +169,7 @@
 	// Interactive elements
 	span {
 		font-weight: 400;
-		font-family: var(--font-two), serif;
+		font-family: var(--font-five), serif;
 		font-size: 0.9rem;
 		background-color: var(--neutral-one);
 		border-radius: 7px;

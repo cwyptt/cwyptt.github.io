@@ -11,7 +11,7 @@
 		<div class="footer-main">
 			<Socials size="small" />
 			<h6>
-				Cwypt | ADH &#60;3
+				Crypt | ADH &#60;3
 				<Tooltip tip="Why, hello there;">
 					<span class="version-tag">v0.1</span>
 				</Tooltip>
@@ -65,13 +65,14 @@
 
 	// Typography
 	h6 {
+    font-family: var(--font-five);
 		text-align: center;
 		line-height: 2.5rem;
 		margin-top: 0;
 	}
 
 	.version-tag {
-		font-family: var(--font-two),serif;
+		font-family: var(--font-five);
 		background-color: var(--neutral-one);
 		border-radius: 7px;
 		padding: 0.15rem 0.5rem 0.15rem;
@@ -93,7 +94,7 @@
     p {
       font-size: 0.9rem;
       color: var(--white-two);
-      font-family: var(--font-two),serif;
+      font-family: var(--font-one),serif;
       letter-spacing: -0.02em;
       margin: 0;
     }

@@ -163,8 +163,8 @@
     width: 10px;
     height: 10px;
     background: transparent;
-    border: 1px solid var(--white-two);
+    border: 1px solid #000000;
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 1;
   }
 </style>
