@@ -148,7 +148,7 @@
 
     /* Create the raindrop shape */
     background: transparent;
-    border: 1px solid var(--white-two);
+    border: 1px solid #38999d;
     border-radius: 50% 0 50% 50%;
     overflow: hidden;
 

@@ -22,8 +22,8 @@
 		return url?.replace(/\s+/g, '') ?? '';
 	}
 
-	// Helper function to clean repository data
-	function cleanRepoData(repo: any): Repo {
+// Helper function to clean repository data
+function cleanRepoData(repo: any): Repo {
 		return {
 			...repo,
 			repo: cleanString(repo.repo),
@@ -276,6 +276,10 @@
   h2 {
     display: inline-block;
     margin-bottom: 1rem;
+  }
+
+  h6 {
+    font-family: var(--font-four)
   }
 
   #star {

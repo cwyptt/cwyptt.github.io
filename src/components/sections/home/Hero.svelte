@@ -13,12 +13,13 @@
 <section id="home" class="wrapper">
 	<div>
 		<h1><span class="glitch" data-text="¢">¢</span>rypt</h1>
-		<h4>Alex Hanson, <span style="font-weight: normal; font-size: 0.8em">Fleet Operations Engineer</span></h4>
-		<h5>Intern at U.S. Cyber Defense Center</h5>
+		<h4>Alex Hanson  <span style="font-weight: normal; font-size: 0.8em">| Roanoke, TX</span></h4>
+		<h5>Operations Engineer at CoreWeave</h5>
 		<div class="socials">
 			<Socials size="normal"/>
 		</div>
-		<Button side onclick={handleClick} onkeydown={handleClick}>Discover my work ↓</Button>
+    <!-- <Button side onclick={handleClick} onkeydown={handleClick}>Discover my work ↓</Button> -->
+		<Button onclick={handleClick} onkeydown={handleClick}>Discover my work ↓</Button>
 	</div>
 	<HeroImage />
 </section>
@@ -32,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5.75rem;
+    margin-bottom: 3rem;
     margin-top: 7rem;
 
     @media screen and (max-width: 868px) {
@@ -56,6 +57,7 @@
   h1 {
     .glitch {
       //transform: rotate(-75deg);
+      font-family: "Space Grotesk";
       font-size: 8rem;
       display: inline-block;
       position: relative;
