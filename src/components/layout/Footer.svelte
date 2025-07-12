@@ -12,7 +12,7 @@
 			<Socials size="small" />
 			<h6>
 				Crypt | ADH &#60;3
-				<Tooltip tip="Why, hello there;">
+				<Tooltip tip="Why, hello there :o">
 					<span class="version-tag">v0.1</span>
 				</Tooltip>
 			</h6>
