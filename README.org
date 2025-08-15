@@ -9,4 +9,4 @@
 Repository for my current portfolio located at [[https://cwyptt.github.io][cwyptt.github.io]].
 
 ** Future Plans
- - I plan to continue using this site as a playground to mess around with Svelte and TypeScript, but I plan on converting this portfolio to a different framework, utilizing the OCaml ecosystem.
+ - I plan to continue using this site as a playground to mess around with Svelte and TypeScript, but I plan on converting this portfolio to a different framework...
