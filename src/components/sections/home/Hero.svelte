@@ -14,7 +14,7 @@
 	<div>
 		<h1><span class="glitch" data-text="¢">¢</span>rypt</h1>
 		<h4>Alex Hanson  <span style="font-weight: normal; font-size: 0.8em">| Roanoke, TX</span></h4>
-		<h5>Operations Engineer at <span style="font-weight: 400">CoreWeave</span></h5>
+		<h5>Operations Engineer II at <span style="font-weight: 400">CoreWeave</span></h5>
 		<div class="socials">
 			<Socials size="normal"/>
 		</div>
